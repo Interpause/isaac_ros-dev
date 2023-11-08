@@ -59,3 +59,16 @@ Follow <https://github.com/IntelRealSense/realsense-ros>.
 
 - Uses prebuilt librealsense and Realsense ROS2 packages.
 - If this works correctly, it saves time & hassle.
+
+## Links
+
+- Getting Started: <https://nvidia-isaac-ros.github.io/getting_started/index.html>
+  - Dev Environment Setup Guide: <https://nvidia-isaac-ros.github.io/getting_started/dev_env_setup.html>
+  - Jetson & Camera Sensors Setup Guide: <https://nvidia-isaac-ros.github.io/getting_started/hardware_setup/index.html>
+
+- Humble Docs:
+  - How to use components missing executable nodes from CLI: <https://docs.ros.org/en/humble/Tutorials/Intermediate/Composition.html>
+  - Params & remapping: <https://docs.ros.org/en/humble/How-To-Guides/Node-arguments.html>
+
+- Default camera library: <https://gitlab.com/boldhearts/ros2_v4l2_camera>
+- Nvidia blog posts: <https://nvidia-isaac-ros.github.io/blog/index.html>
