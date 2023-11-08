@@ -43,6 +43,8 @@ ros2 launch isaac_ros_yolov8 isaac_ros_yolov8_visualize.launch.py model_file_pat
 
 ## Realsense Attempts
 
+Conclusion: Only Approach A works, for some reason. `librealsense2` must be built from source while the camera is connected. The Realsense ROS packages must also be built from source otherwise `apt` will overwrite `librealsense2`. Otherwise, the camera will fail to detect with "DS5 group_devices is empty." even if `lsusb` properly lists the camera. In summary, the Nividia ppl knew what they were doing. Most importantly, the first step in Nvidia's guide to setup udev rules on the host OS is crucial.
+
 ### Approach A
 
 Follow <https://nvidia-isaac-ros.github.io/getting_started/hardware_setup/sensors/realsense_setup.html>.
