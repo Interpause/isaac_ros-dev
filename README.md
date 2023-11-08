@@ -74,3 +74,17 @@ Follow <https://github.com/IntelRealSense/realsense-ros>.
 
 - Default camera library: <https://gitlab.com/boldhearts/ros2_v4l2_camera>
 - Nvidia blog posts: <https://nvidia-isaac-ros.github.io/blog/index.html>
+
+## Visual SLAM Demo
+
+```sh
+ros2 launch isaac_ros_visual_slam isaac_ros_visual_slam_realsense.launch.py
+```
+
+and
+
+```sh
+rviz2 -d isaac_ros_visual_slam/isaac_ros_visual_slam/rviz/realsense.cfg.rviz
+```
+
+There is an error in the launch file however, see <https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam/issues/113#issuecomment-1801880688> for the fix.
