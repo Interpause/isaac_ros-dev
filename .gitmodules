@@ -1,0 +1,15 @@
+[submodule "isaac_ros_common"]
+	path = isaac_ros_common
+	url = https://github.com/Interpause/isaac_ros_common.git
+[submodule "isaac_ros_dnn_inference"]
+	path = isaac_ros_dnn_inference
+	url = https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_dnn_inference.git
+[submodule "isaac_ros_image_pipeline"]
+	path = isaac_ros_image_pipeline
+	url = https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_image_pipeline.git
+[submodule "isaac_ros_nitros"]
+	path = isaac_ros_nitros
+	url = https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nitros.git
+[submodule "isaac_ros_object_detection"]
+	path = isaac_ros_object_detection
+	url = https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_object_detection.git
