@@ -13,7 +13,9 @@ sudo apt install ros-humble-image-proc
 Camera node:
 
 ```sh
-ros2 run v4l2_camera v4l2_camera_node --ros-args -r /image_raw:=/image_cam
+ros2 run usb_cam usb_cam_node_exe --ros-args -r /image_raw:=/image_cam -p brightness:=100
+# WSL2: usbipd hangs if camera bandwidth is too large.
+ros2 run usb_cam usb_cam_node_exe --ros-args -r /image_raw:=/image_cam -p framerate:=10.0 -p pixel_format:=mjpeg2rgb -p brightness:=100
 ```
 
 Container for nodelets:
@@ -88,3 +90,9 @@ rviz2 -d isaac_ros_visual_slam/isaac_ros_visual_slam/rviz/realsense.cfg.rviz
 ```
 
 There is an error in the launch file however, see <https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam/issues/113#issuecomment-1801880688> for the fix.
+
+## Using webcam on WSL2
+
+- <https://github.com/dorssel/usbipd-win>
+- <https://github.com/Katzeee/Notes/blob/master/Windows/wsl2-using-usb-webcam.md>
+- <https://agiledevart.github.io/wsl2_usb_camera.txt>
